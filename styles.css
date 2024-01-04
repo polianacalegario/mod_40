@@ -1,0 +1,46 @@
+/* Estilos Globais */
+body, html {
+    height: 100%; /* Garantindo que o html e o body ocupem a altura total */
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo na tela */
+}
+
+/* Ajustando o conteúdo principal */
+#Tabela_01 {
+    position: relative; /* Posição relativa para os elementos absolutos dentro dele */
+    width: 90%; /* Ajustando para deixar o conteúdo um pouco menor */
+    max-width: 1728px; /* 90% de 1920px para reduzir o tamanho geral */
+    margin: auto; /* Centraliza o conteúdo horizontalmente e verticalmente */
+    display: flex;
+    flex-direction: column; /* Organiza os filhos em coluna */
+    align-items: center; /* Alinha os itens no centro */
+}
+
+/* Estilos para Elementos Individuais - ajustando as seções específicas da página */
+#ebac-40-landingpage-01, 
+#ebac-40-landingpage-02, 
+#ebac-40-landingpage-03, 
+#ebac-40-landingpage-04 {
+    width: 100%; /* Faz as imagens responsivas */
+    position: relative; /* Garante que os elementos fiquem corretamente na página */
+}
+
+img {
+    width: 100%; /* Faz as imagens responsivas */
+    height: auto; /* Mantém a proporção das imagens */
+}
+
+/* Design Responsivo */
+@media only screen and (max-width: 768px) {
+    /* Ajustes para telas menores */
+    #Tabela_01 {
+        width: 95%; /* Aumenta um pouco para telas menores */
+    }
+}
